@@ -1,3 +1,10 @@
+## Blocks of code
+
+```
+let message = 'Hello world';
+alert(message);
+```
+
 PROJECT EXAMPLE DVDRENTAL:
 
 .... HW - 1....
