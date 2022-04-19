@@ -1,6 +1,6 @@
-#PROJECT EXAMPLE DVDRENTAL:
+## PROJECT EXAMPLE DVDRENTAL:
 
-####.... HW - 1....
+#### .... HW - 1....
 
 1-) film tablosunda bulunan title ve description sütunlarındaki verileri sıralayınız.
 
@@ -32,7 +32,7 @@
 -> SELECT * FROM film WHERE NOT length > 50 AND NOT (rental_rate = 2.99 OR rental_rate = 4.99);
 ```
 
-.... HW - 2....
+#### .... HW - 2....
 1-) film tablosunda bulunan tüm sütunlardaki verileri replacement cost değeri 12.99 dan büyük eşit ve 16.99 küçük olma koşuluyla sıralayınız 
 ( BETWEEN - AND yapısını kullanınız.)
 ```
@@ -48,7 +48,7 @@
 ```
 -> SELECT * FROM film WHERE rental_rate IN (0.99, 2.99, 499) AND replacement_cost IN(12.99, 15,99, 28.99);
 ```
-.... HW - 3....
+#### .... HW - 3....
 
 1-) country tablosunda bulunan country sütunundaki ülke isimlerinden 'A' karakteri ile başlayıp 'a' karakteri ile sonlananları sıralayınız.
 ```
@@ -67,7 +67,7 @@ sıralayınız.
 ```
 -> SELECT * FROM film WHERE title LIKE 'C%' AND length > 90 AND rental_rate = 2.99;
 ```
-.... HW - 4....
+#### .... HW - 4....
 1-) film tablosunda bulunan replacement_cost sütununda bulunan birbirinden farklı değerleri sıralayınız.
 ```
 -> SELECT DISTINCT replacement_cost FROM film;
@@ -89,7 +89,7 @@ sıralayınız.
 -> SELECT COUNT(city) FROM city WHERE city ILIKE '%R';
 ```
 
-.... HW - 5....
+#### .... HW - 5....
 1-) film tablosunda bulunan ve film ismi (title) 'n' karakteri ile biten en uzun (length) 5 filmi sıralayınız.
 ```
 -> SELECT * FROM film  WHERE title LIKE '%n'ORDER BY length LIMIT 5;
@@ -102,7 +102,7 @@ sıralayınız.
 ```
 -> SELECT * FROM customer WHERE store_id = 1 ORDER BY last_name DESC LIMIT 4;
 ```
-.... HW - 6....
+#### .... HW - 6....
 1-) film tablosunda bulunan rental_rate sütunundaki değerlerin ortalaması nedir?
 ```
 -> SELECT AVG (rental_rate) FROM film;
@@ -120,7 +120,7 @@ sıralayınız.
 -> SELECT COUNT(DISTINCT(replacement_cost)) FROM film WHERE length < 150;
 ```
 
-.... HW - 7....
+#### .... HW - 7....
 1-) film tablosunda bulunan filmleri rating değerlerine göre gruplayınız.
 ```
 -> SELECT rating, COUNT(*) FROM film GROUP BY rating;
@@ -140,7 +140,7 @@ barındıran country_id bilgisini ve şehir sayısını paylaşınız.
 -> SELECT country_id, COUNT(*) FROM city  GROUP BY country_id ORDER BY MAX(city) DESC LIMIT 1;
 ```
 
-.... HW - 8....
+#### .... HW - 8....
 1-) test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.
 ```
 -> CREATE TABLE employee(
@@ -265,7 +265,7 @@ WHERE id = 45;
 --SELECT * FROM employee;
 ```
 
-.... HW - 9....
+#### .... HW - 9....
 1-) city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
 ```
 -> SELECT city.city, country.country FROM city INNER JOIN country ON city.country_id = country.country_id;
@@ -281,7 +281,7 @@ birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
 -> SELECT rental.rental_id, customer.first_name, customer.last_name FROM customer INNER JOIN rental ON customer.customer_id = rental.customer_id;
 ```
 
-.... HW - 10....
+#### .... HW - 10....
 
 1-) city tablosu ile country tablosunda bulunan şehir (city) ve ülke (country) isimlerini birlikte görebileceğimiz LEFT JOIN sorgusunu yazınız.
 ```
