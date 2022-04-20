@@ -287,8 +287,7 @@ birlikte görebileceğimiz INNER JOIN sorgusunu yazınız.
 ```
 -> SELECT city, country FROM city LEFT JOIN country ON city.country_id = country.country_id;
 ```
-2-) customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz RIGHT JOIN sorgusunu 
-yazınız.
+2-) customer tablosu ile payment tablosunda bulunan payment_id ile customer tablosundaki first_name ve last_name isimlerini birlikte görebileceğimiz RIGHT JOIN sorgusunu  yazınız.
 ```
 -> SELECT payment_id, first_name, last_name FROM customer RIGHT JOIN payment ON customer.customer_id = payment.customer_id;
 ```
@@ -296,4 +295,23 @@ yazınız.
 yazınız.
 ```
 -> SELECT rental_id, first_name, last_name FROM customer FULL JOIN rental ON customer.customer_id = rental.customer_id;
+```
+
+#### .... HW - 11....
+
+1-) actor ve customer tablolarında bulunan first_name sütunları için tüm verileri sıralayalım.
+```
+-> 
+```
+2-) actor ve customer tablolarında bulunan first_name sütunları için kesişen verileri sıralayalım.
+```
+-> 
+```
+3-) actor ve customer tablolarında bulunan first_name sütunları için ilk tabloda bulunan ancak ikinci tabloda bulunmayan verileri sıralayalım.
+```
+-> 
+```
+4-) İlk 3 sorguyu tekrar eden veriler için de yapalım.
+```
+-> 
 ```
